@@ -5,6 +5,6 @@ FROM httpd:2.4
 
 #RUN rm /var/www/html/index.html
 COPY index.html /usr/local/apache2/htdocs/index.html
-COPY ./ports.conf /etc/apache2/ports.conf
-COPY ./apache.conf /etc/apache2/sites-enabled/000-default.conf
+COPY ports.conf /usr/local/apache2/ports.conf
+COPY apache.conf /usr/local/apache2/conf/httpd.conf
 
